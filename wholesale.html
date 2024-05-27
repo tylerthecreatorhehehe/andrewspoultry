@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="initial-scale=1, width=device-width">
+  	
+  	<link rel="stylesheet"  href="./wholesale.css" />
+  	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" />
+  	
+  	
+  	
+</head>
+<body>
+  	
+  	<div class="wholesale">
+    		<div class="footer">
+      			<div class="footer-child">
+      			</div>
+      			<b class="dive-into-egg-celence">Dive into egg-celence.</b>
+      			<b class="andrews-poultry">Andrew’s Poultry</b>
+      			<div class="tuburan-cebu-philippines-container">
+        				<p class="p">+123 456</p>
+        				<p class="p">Tuburan, Cebu, Philippines</p>
+        				<p class="p">@AndrewsPoultry</p>
+      			</div>
+      			<div class="links">Links</div>
+      			<div class="sign-up-for">Sign up for product updates</div>
+      			<div class="media">Media</div>
+      			<div class="home-about-contact-container">
+        				<p class="p">Home</p>
+        				<p class="p">About</p>
+        				<p class="p">Contact</p>
+        				<p class="p">FAQ’s</p>
+        				<p class="p">Product</p>
+      			</div>
+      			<div class="facebook-instagram-twitter-container">
+        				<p class="p">Facebook</p>
+        				<p class="p">Instagram</p>
+        				<p class="p">Twitter</p>
+        				<p class="p">YouTube</p>
+        				<p class="p">TikTok</p>
+      			</div>
+      			<div class="footer-item">
+      			</div>
+      			<div class="footer-inner">
+      			</div>
+      			<div class="enter-e-mail-address">Enter e-mail address</div>
+      			<img class="arrow-icon" alt="" src="Arrow 1.svg">
+      			
+                <a href="#nav">
+      			<img class="footer-button-icon" alt="" src="Footer Button Main.png">
+      			</a>
+                
+    		</div>
+    		<div class="cart-button">
+      			<div class="cart-container">
+      			</div>
+      			<b class="add-to-cart">Add to Cart</b>
+    		</div>
+    		<div class="quantity">
+      			<div class="quantity-2">
+        				<button id="quantity2" class="quantity-2-container">Bundle of 160
+                        </button>
+        				<!--<div class="quantity-2-text">Bundle of 160</div>-->
+      			</div>
+      			<div class="quantity-1">
+        				<button id="quantity1" class="quantity-2-container">Bundle of 80
+                        </button>
+        				<!--<div class="quantity-11">Bundle of 80</div>-->
+      			</div>
+      			<b class="quantity-text">Quantity</b>
+    		</div>
+    		<img class="product-picture-container" alt="" src="Wholesale.png">
+    		
+    		<div class="product-information">
+      			<b class="wholesale-product-text-container">
+        				<span class="wholesale-product-text-container1">
+          					<p class="p">Ready to Lay Chickens</p>
+          					<p class="p">in Wholesale</p>
+        				</span>
+      			</b>
+      			<div class="whole-product-description">Raised with meticulous attention to health and nutrition, our chickens are primed to start laying eggs as soon as they arrive in your coop. With vibrant plumage and robust health, these hens are bred for superior egg production</div>
+      			<b id="price" class="product-price">$0</b>
+    		</div>
+    		<div class="nav-bar">
+                <div id="nav">
+                <div class="nav-bar-child">
+                </div>
+                <a href="index.html" class="home3">Home</a>
+                <a href="index.html" class="about3">About</a>
+                <a href="#footer" class="contact4">Contact</a>
+                <a href="products.html" class="products">Products</a>
+                <a href="index.html" class="faq3">FAQ</a>
+          </div>
+          </div>
+  	</div>
+  	
+  	
+  	
+<script>
+
+const buttons = document.querySelectorAll(".quantity-2-container");
+
+buttons.forEach(button => {
+  button.addEventListener("click", function() {
+    // Remove "clicked" class from all buttons
+    buttons.forEach(btn => {
+      btn.classList.remove("clicked");
+    });
+    // Add "clicked" class only to the clicked button
+    this.classList.add("clicked");
+  });
+});
+
+document.getElementById("quantity1").addEventListener("click", function() {
+  // Get the element with id "text" and update its content
+  const textElement = document.getElementById("price");
+  textElement.textContent = "$30";
+});
+
+document.getElementById("quantity2").addEventListener("click", function() {
+  // Get the element with id "text" and update its content
+  const textElement = document.getElementById("price");
+  textElement.textContent = "$60";
+});
+</script>
+</body>
+</html>
